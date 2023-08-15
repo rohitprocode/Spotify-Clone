@@ -35,7 +35,15 @@ ul li {
     padding: 0 8px;
 }
 .container{
-    min-height: 73.2vh;
+    min-height: 75vh;
+    background-color: darkslategrey;
+    color: white;
+    width: 70vw;
+    margin: 12px auto;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    font-family: 'PT Sans Narrow', sans-serif;
+
 }
 .bottom{
     display: flex;
@@ -44,15 +52,18 @@ ul li {
     align-items: center;
     background-color:black;
     color: white;
-    height: 20vh;
+    height: 15vh;
     position: sticky;
-    bottom: 0;
+    bottom: 0px;
 }
 .icons{
     margin-top: 15px;
 }
 .icons i{
     margin: 0 20px;
+    width: 2vw;
+    height: 2vh;
+    cursor: pointer;
 }
 #myProgressBar{
     width: 80vw;
