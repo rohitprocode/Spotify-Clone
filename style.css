@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: grey;
+}
+nav ul{
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 4vw;
+}
+ul li{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+#logo_img{
+    width: 44px;
+}
