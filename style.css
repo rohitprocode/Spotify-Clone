@@ -9,7 +9,7 @@ nav ul{
     display: flex;
     background-color: black;
     color: white;
-    height: 4vw;
+    height: 50px;
 }
 ul li{
     display: flex;
@@ -17,5 +17,5 @@ ul li{
     margin: 10px;
 }
 #logo_img{
-    width: 44px;
+    width: 40px;
 }
