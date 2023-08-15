@@ -1,21 +1,34 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=PT+Serif:wght@700&family=REM:wght@500&family=Roboto:wght@500&display=swap');
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: grey;
 }
-nav ul{
+
+nav ul {
     display: flex;
     background-color: black;
     color: white;
     height: 50px;
 }
-ul li{
+
+ul li {
     display: flex;
     align-items: center;
     margin: 10px;
 }
-#logo_img{
-    width: 40px;
+
+#brand {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'REM', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo_img {
+    width: 35px;
 }
