@@ -55,7 +55,6 @@ ul li {
     background-color: white;
     color: black;
     width: 40%;
-    height: 5vh;
     margin: 10px 40px;
     padding: 0px 10px;
     display: flex;
@@ -111,7 +110,7 @@ ul li {
     left: 10vw; 
     font-family: 'PT Sans Narrow', sans-serif;
 }
-.songInfo img{
+#dancing_bar{
     width: 10vh;
     margin: 0px 10px;
     opacity: 0;

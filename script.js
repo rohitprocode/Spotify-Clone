@@ -5,7 +5,7 @@ let songIndex = 0;
 let song1 = new Audio('/Other Data/songs/1.mp3');
 let masterPlay = document.getElementsByClassName('masterPlay')[0];
 let myProgressBar = document.getElementsByClassName('myProgressBar');
-// masterPlay.paused();
+let Dancing_bars = document.getElementById('dancing_bar');
 //Array of Object
 
 let songs = [
@@ -24,10 +24,12 @@ masterPlay.addEventListener('click', ()=> {
         song1.play();
         masterPlay.classList.remove('fa-play-circle');
         masterPlay.classList.add('fa-pause-circle');
+        Dancing_bars.style.opacity = 1;
     }
     else {
         song1.pause();
         masterPlay.classList.add('fa-play-circle');
         masterPlay.classList.remove('fa-pause-circle');
+        Dancing_bars.style.opacity = 0;
     }
 })
