@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=PT+Serif:wght@700&family=REM:wght@500&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=PT+Sans+Narrow:wght@700&family=PT+Serif:wght@700&family=REM:wght@500&family=Roboto:wght@500&display=swap');
 
 * {
     margin: 0;
@@ -34,37 +35,46 @@ ul li {
     width: 35px;
     padding: 0 8px;
 }
-.container{
+
+.container {
     min-height: 75vh;
     background-color: darkslategrey;
     color: white;
-    width: 70vw;
+    width: 65vw;
     margin: 12px auto;
     background-image: url(bg.jpg);
     background-size: cover;
     font-family: 'PT Sans Narrow', sans-serif;
-
+    border-radius: 10px;
 }
-.bottom{
+
+.container h1 {
+    padding: 20px 40px;
+}
+
+.bottom {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:black;
+    background-color: black;
     color: white;
     height: 15vh;
     position: sticky;
     bottom: 0px;
 }
-.icons{
+
+.icons {
     margin-top: 15px;
 }
-.icons i{
+
+.icons i {
     margin: 0 20px;
     width: 2vw;
     height: 2vh;
     cursor: pointer;
 }
-#myProgressBar{
+
+#myProgressBar {
     width: 80vw;
 }
