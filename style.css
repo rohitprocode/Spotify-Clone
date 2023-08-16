@@ -41,7 +41,7 @@ ul li {
     background-color: darkslategrey;
     color: white;
     width: 65vw;
-    margin: 12px auto;
+    margin: 1.5vh 18vw;
     background-image: url(bg.jpg);
     background-size: cover;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -54,7 +54,7 @@ ul li {
 .songItem{
     background-color: white;
     color: black;
-    width: 25vw;
+    width: 40%;
     height: 5vh;
     margin: 10px 40px;
     padding: 0px 10px;
@@ -103,6 +103,17 @@ ul li {
     width: 2vw;
     height: 2vh;
     cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw; 
+}
+.songInfo img{
+    width: 10vh;
+    margin: 0px 10px;
+    opacity: 0;
+    transition: 1s ease-in;
 }
 
 #myProgressBar {
