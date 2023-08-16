@@ -48,10 +48,40 @@ ul li {
     border-radius: 10px;
 }
 
-.container h1 {
+.songList h1 {
     padding: 20px 40px;
 }
+.songItem{
+    background-color: white;
+    color: black;
+    width: 25vw;
+    height: 5vh;
+    margin: 10px 40px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 30px;
+}
 
+.songItem img{
+    width: 4vh;
+    border-radius: 20px;
+}
+
+.song_name{
+    font-size: 1.4vw;
+}
+
+.timestamp{
+    display: flex;
+    align-items: center;
+}
+
+.timestamp i{
+    font-size: 2vw;
+    margin: 0px 2px;
+}
 .bottom {
     display: flex;
     flex-direction: column;
