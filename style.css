@@ -114,7 +114,7 @@ ul li {
     width: 10vh;
     margin: 0px 10px;
     opacity: 0;
-    transition: 1s ease-in;
+    transition: 0.5s ease-in
 }
 
 #myProgressBar {
