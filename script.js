@@ -6,18 +6,26 @@ let audioElement = new Audio('Other Data/songs/1.mp3');
 let masterPlay = document.getElementsByClassName('masterPlay')[0];
 let myProgressBar = document.getElementById('myProgressBar');
 let Dancing_bars = document.getElementById('dancing_bar');
-
+let songItem = Array.from(document.getElementsByClassName('songItem'));
 //Array of Object
 
 let songs = [
-    { songName: 'Tere waste falak se me', filtPath: '/Other Data/songs/1.mp3', coverPath: '/Other Data/covers/10.jpg' },
-    { songName: 'Tere waste falak se me', filtPath: '/Other Data/songs/1.mp3', coverPath: '/Other Data/covers/10.jpg' },
-    { songName: 'Tere waste falak se me', filtPath: '/Other Data/songs/1.mp3', coverPath: '/Other Data/covers/10.jpg' },
-    { songName: 'Tere waste falak se me', filtPath: '/Other Data/songs/1.mp3', coverPath: '/Other Data/covers/10.jpg' },
-    { songName: 'Tere waste falak se me', filtPath: '/Other Data/songs/1.mp3', coverPath: '/Other Data/covers/10.jpg' },
-    { songName: 'Tere waste falak se me', filtPath: '/Other Data/songs/1.mp3', coverPath: '/Other Data/covers/10.jpg' }
+    { songName: 'Tere waste falak se me', filtPath: '/Other Data/songs/1.mp3', coverPath: '/Other Data/covers/1.jpg' },
+    { songName: 'Tere waste falak se me', filtPath: '/Other Data/songs/2.mp3', coverPath: '/Other Data/covers/2.jpg' },
+    { songName: 'Tere waste falak se me', filtPath: '/Other Data/songs/3.mp3', coverPath: '/Other Data/covers/3.jpg' },
+    { songName: 'Tere waste falak se me', filtPath: '/Other Data/songs/4.mp3', coverPath: '/Other Data/covers/4.jpg' },
+    { songName: 'Tere waste falak se me', filtPath: '/Other Data/songs/5.mp3', coverPath: '/Other Data/covers/5.jpg' },
+    { songName: 'Tere waste falak se me', filtPath: '/Other Data/songs/6.mp3', coverPath: '/Other Data/covers/6.jpg' },
+    { songName: 'Tere waste falak se me', filtPath: '/Other Data/songs/7.mp3', coverPath: '/Other Data/covers/7.jpg' },
+    { songName: 'Tere waste falak se me', filtPath: '/Other Data/songs/8.mp3', coverPath: '/Other Data/covers/8.jpg' },
+    { songName: 'Tere waste falak se me', filtPath: '/Other Data/songs/9.mp3', coverPath: '/Other Data/covers/9.jpg' },
+    { songName: 'Tere waste falak se me', filtPath: '/Other Data/songs/10.mp3', coverPath: '/Other Data/covers/10.jpg'}
 ];
 
+songItem.forEach((element,i)=>{
+    console.log(element + " " + i)
+    element.getElementsByTagName('img')[0].src = songs[i].coverPath;
+})
 
 // Handle play/pause event
 masterPlay.addEventListener('click', () => {
