@@ -22,6 +22,7 @@ let songs = [
     { songName: 'Tere waste falak se me', filePath: '/Other Data/songs/10.mp3', coverPath: '/Other Data/covers/10.jpg'}
 ];
 
+//Display Cover Image and Song Name using Array Object
 songItem.forEach((element,i)=>{
     element.getElementsByTagName('img')[0].src = songs[i].coverPath;
     element.getElementsByClassName('songName')[0].innerHTML= songs[i].songName;
