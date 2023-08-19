@@ -28,24 +28,6 @@ songItem.forEach((element,i)=>{
     element.getElementsByClassName('songName')[0].innerHTML= songs[i].songName;
 })
 
-//Stop Another Song Play
-const makeAllPlay = () =>{
-    Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
-        element.classList.remove('fa-pause-circle');
-        element.classList.add('fa-play-circle');
-    })
-}
-
-// Play List Songs
-Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
-    element.addEventListener('click',(e)=>{
-        makeAllPlay();
-        e.target.classList.remove('fa-play-circle');
-        e.target.classList.add('fa-pause-circle');
-    })
-})
-
-
 // Handle play/pause event
 masterPlay.addEventListener('click', ()=> {
     if (audioElement.paused || audioElement.currentTime <= 0) {
@@ -74,3 +56,27 @@ audioElement.addEventListener('timeupdate', ()=>{
 myProgressBar.addEventListener('change',()=>{
     audioElement.currentTime = myProgressBar.value * audioElement.duration / 100;
 })
+
+
+//Stop Another Song Play
+const makeAllPlay = () =>{
+    Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
+        element.classList.remove('fa-pause-circle');
+        element.classList.add('fa-play-circle');
+    })
+}
+
+// Play List Songs
+Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
+    element.addEventListener('click',(e)=>{
+        makeAllPlay();
+        songIndex = parseInt(e.target.id);
+        console.log(songIndex);
+        e.target.classList.remove('fa-play-circle');
+        e.target.classList.add('fa-pause-circle');
+        audioElement.src = `/Other Data/songs/${songIndex + 1}.mp3`;
+        audioElement.currentTime = 0;
+        audioElement.play();    
+    })
+})
+
