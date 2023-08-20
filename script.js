@@ -39,12 +39,16 @@ masterPlay.addEventListener('click', () => {
         masterPlay.classList.add('fa-pause-circle');
         Dancing_bars.style.opacity = 1;
         Master_Song_Name.innerHTML = songs[songIndex].songName;
+        document.getElementById(`${songIndex}`).classList.remove('fa-play-circle');
+        document.getElementById(`${songIndex}`).classList.add('fa-pause-circle');
     }
     else {
         audioElement.pause();
         masterPlay.classList.add('fa-play-circle');
         masterPlay.classList.remove('fa-pause-circle');
         Dancing_bars.style.opacity = 0;
+        document.getElementById(`${songIndex}`).classList.add('fa-play-circle');
+        document.getElementById(`${songIndex}`).classList.remove('fa-pause-circle');
     }
 })
 
@@ -75,17 +79,17 @@ const makeAllPlay = () => {
 // Play List Songs
 Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) => {
     element.addEventListener('click', (e) => {
-        makeAllPlay();
-        songIndex = parseInt(e.target.id);
-        e.target.classList.remove('fa-play-circle');
-        e.target.classList.add('fa-pause-circle');
-        audioElement.src = `/Other Data/songs/${songIndex + 1}.mp3`;
-        audioElement.currentTime = 0;
-        audioElement.play();
-        masterPlay.classList.add('fa-pause-circle');
-        masterPlay.classList.remove('fa-play-circle');
-        Master_Song_Name.innerHTML = songs[songIndex].songName;
-        Dancing_bars.style.opacity = 1;
+            makeAllPlay();
+            songIndex = parseInt(e.target.id);
+            e.target.classList.remove('fa-play-circle');
+            e.target.classList.add('fa-pause-circle');
+            audioElement.src = `/Other Data/songs/${songIndex + 1}.mp3`;
+            audioElement.currentTime = 0;
+            audioElement.play();
+            masterPlay.classList.add('fa-pause-circle');
+            masterPlay.classList.remove('fa-play-circle');
+            Master_Song_Name.innerHTML = songs[songIndex].songName;
+            Dancing_bars.style.opacity = 1;
     })
 })
 
@@ -118,6 +122,7 @@ document.getElementById('next').addEventListener('click', () => {
     masterPlay.classList.add('fa-pause-circle');
     masterPlay.classList.remove('fa-play-circle');
     Master_Song_Name.innerHTML = songs[songIndex].songName;
+
 
 
 })
