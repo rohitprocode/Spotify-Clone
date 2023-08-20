@@ -121,3 +121,38 @@ ul li {
     width: 80vw;
     cursor: pointer;
 }
+
+@media screen and (max-width: 320px){
+    body {
+        background-color: black;
+    }
+    .container{
+        margin: 0;
+        width: 100vw;
+        border-radius: 0;
+    }
+    .songList h1{
+        font-size: 8vw;
+    }
+    .songItem{
+        margin: 10px 30px;
+        width: 70vw;
+        font-size: 10px;
+        justify-content: space-between;
+    }
+    .timestamp{
+        font-size: 0px;
+    }
+    .timestamp .fas{
+        font-size: 8vw;
+    }
+    #myProgressBar{
+        width: 95vw;
+    }
+    .icons i{
+        font-size: 8vw;
+    }
+    .songInfo{
+        display: none;
+    }
+}
