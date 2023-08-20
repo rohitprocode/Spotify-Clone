@@ -85,6 +85,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
         masterPlay.classList.add('fa-pause-circle');
         masterPlay.classList.remove('fa-play-circle');
         Master_Song_Name.innerHTML = songs[songIndex].songName;
+        Dancing_bars.style.opacity = 1;
     })
 })
 
@@ -117,4 +118,6 @@ document.getElementById('next').addEventListener('click', () => {
     masterPlay.classList.add('fa-pause-circle');
     masterPlay.classList.remove('fa-play-circle');
     Master_Song_Name.innerHTML = songs[songIndex].songName;
+
+
 })
