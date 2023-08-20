@@ -2,7 +2,7 @@ console.log("Welcome to My Spotify Clone");
 
 //Initialize the variables
 let songIndex = 0;
-let audioElement = new Audio('Other Data/songs/KOTS.mp3');
+let audioElement = new Audio('Other Data/songs/1.mp3');
 let masterPlay = document.getElementsByClassName('masterPlay')[0];
 let myProgressBar = document.getElementById('myProgressBar');
 let Dancing_bars = document.getElementById('dancing_bar');
