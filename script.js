@@ -2,7 +2,7 @@ console.log("Welcome to My Spotify Clone");
 
 //Initialize the variables
 let songIndex = 0;
-let audioElement = new Audio('Other Data/songs/1.mp3');
+let audioElement = new Audio('Other Data/songs/KOTS.mp3');
 let masterPlay = document.getElementsByClassName('masterPlay')[0];
 let myProgressBar = document.getElementById('myProgressBar');
 let Dancing_bars = document.getElementById('dancing_bar');
@@ -13,7 +13,7 @@ let Master_Song_Name = document.getElementById('masterPlaySongname');
 //Array of Object
 
 let songs = [
-    { songName: 'King Of The Street - Emiway Bantai', filePath: '/Other Data/songs/1.mp3', coverPath: '/Other Data/covers/1.jpg' },
+    { songName: 'King Of The Street - Emiway Bantai', filePath: '/Other Data/songs/KOTS.mp3', coverPath: '/Other Data/covers/1.jpg' },
     { songName: 'Company - Emiway Bantai', filePath: '/Other Data/songs/2.mp3', coverPath: '/Other Data/covers/2.jpg' },
     { songName: 'Kudi - Emiway Bantai', filePath: '/Other Data/songs/3.mp3', coverPath: '/Other Data/covers/3.jpg' },
     { songName: 'Royal Rumble - Emiway Bantai', filePath: '/Other Data/songs/4.mp3', coverPath: '/Other Data/covers/4.jpg' },
@@ -58,6 +58,10 @@ audioElement.addEventListener('timeupdate', () => {
     // Update Seekbar
     let progress = parseInt((audioElement.currentTime / audioElement.duration) * 100);
     myProgressBar.value = progress;
+    
+    if(myProgressBar.value == 100){
+        document.getElementById('next').click();
+    }
 })
 
 //Seekbar Action Event
