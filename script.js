@@ -79,6 +79,7 @@ const makeAllPlay = () => {
 // Play List Songs
 Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) => {
     element.addEventListener('click', (e) => {
+        if(audioElement.paused){
             makeAllPlay();
             songIndex = parseInt(e.target.id);
             e.target.classList.remove('fa-play-circle');
@@ -90,6 +91,14 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
             masterPlay.classList.remove('fa-play-circle');
             Master_Song_Name.innerHTML = songs[songIndex].songName;
             Dancing_bars.style.opacity = 1;
+        }else{
+        audioElement.pause();
+        masterPlay.classList.add('fa-play-circle');
+        masterPlay.classList.remove('fa-pause-circle');
+        Dancing_bars.style.opacity = 0;
+        document.getElementById(`${songIndex}`).classList.add('fa-play-circle');
+        document.getElementById(`${songIndex}`).classList.remove('fa-pause-circle');
+        }
     })
 })
 
