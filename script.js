@@ -60,7 +60,7 @@ audioElement.addEventListener('timeupdate', () => {
     myProgressBar.value = progress;
     
     if(myProgressBar.value == 100){
-        document.getElementById('next').click();
+        document.getElementById('next').click();    
     }
 })
 
