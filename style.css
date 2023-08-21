@@ -44,10 +44,11 @@ ul li {
     margin: 1.5vh 18vw;
     background-image: url(bg.jpg);
     background-repeat: no-repeat;
-    background-size: 500px;
-    background-position: 100% -10%;
+    background-size: 350px;
+    background-position-x: 90%;
     font-family: 'PT Sans Narrow', sans-serif;
     border-radius: 10px;
+    background-position-y: bottom;
 }
 
 .songList h1 {
@@ -291,7 +292,7 @@ ul li {
 
 @media (min-width:1000px) and (max-width: 1400px) {
     .container {
-        background-size: 350px;
         background-position: 100% -10%;
+        background-position-y: bottom;
     }
 }
