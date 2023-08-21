@@ -17,12 +17,12 @@ let songs = [
     { songName: 'Company - Emiway Bantai', filePath: '/Other Data/songs/2.mp3', coverPath: '/Other Data/covers/2.jpg' },
     { songName: 'Kudi - Emiway Bantai', filePath: '/Other Data/songs/3.mp3', coverPath: '/Other Data/covers/3.jpg' },
     { songName: 'Royal Rumble - Emiway Bantai', filePath: '/Other Data/songs/4.mp3', coverPath: '/Other Data/covers/4.jpg' },
-    { songName: 'Choco - Emiway Bantai', filePath: '/Other Data/songs/5.mp3', coverPath: '/Other Data/covers/5.jpg' },
-    { songName: 'Brown Munde - Emiway Bantai', filePath: '/Other Data/songs/6.mp3', coverPath: '/Other Data/covers/6.jpg' },
+    { songName: 'What Can I Do - Emiway Bantai', filePath: '/Other Data/songs/5.mp3', coverPath: '/Other Data/covers/5.jpg' },
+    { songName: 'Bad Munda - Emiway Bantai', filePath: '/Other Data/songs/6.mp3', coverPath: '/Other Data/covers/6.jpg' },
     { songName: 'My Time - Emiway Bantai', filePath: '/Other Data/songs/7.mp3', coverPath: '/Other Data/covers/7.jpg' },
     { songName: 'Round One - Emiway Bantai', filePath: '/Other Data/songs/8.mp3', coverPath: '/Other Data/covers/8.jpg' },
     { songName: 'Machayenge - Emiway Bantai', filePath: '/Other Data/songs/9.mp3', coverPath: '/Other Data/covers/9.jpg' },
-    { songName: 'Freeverse Feast - Emiway Bantai', filePath: '/Other Data/songs/10.mp3', coverPath: '/Other Data/covers/10.jpg' }
+    { songName: 'Freeverse Feast 2 - Emiway Bantai', filePath: '/Other Data/songs/10.mp3', coverPath: '/Other Data/covers/10.jpg' }
 ];
 
 //Display Cover Image and Song Name using Array Object

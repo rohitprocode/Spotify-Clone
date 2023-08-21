@@ -43,7 +43,6 @@ ul li {
     width: 65vw;
     margin: 1.5vh 18vw;
     background-image: url(bg.jpg);
-    background-size: cover;
     font-family: 'PT Sans Narrow', sans-serif;
     border-radius: 10px;
 }
