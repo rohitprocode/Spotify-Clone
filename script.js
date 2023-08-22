@@ -1,6 +1,6 @@
 console.log("Welcome to My Spotify Clone");
 
-//Initialize the variables
+//Initialize the variables range
 let songIndex = 0;
 let audioElement = new Audio('Other Data/songs/1.mp3');
 let masterPlay = document.getElementsByClassName('masterPlay')[0];
